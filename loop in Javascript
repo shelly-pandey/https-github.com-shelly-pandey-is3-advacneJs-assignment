@@ -1,0 +1,16 @@
+//Javascript code that prints out (using `console.log`) a sequence of numbers from 1 to 1,000,000 (one million) without blocking the interactions with the browser.
+For example, while that piece of Javascript is running, mouse, keyboard events etc should work fine .
+
+function loopTimeout() {
+    let i = 0;
+    let interval = setInterval(function () {
+        i++;
+
+        if (i == 1000000) {
+            clearInterval(interval);
+        }
+        console.log(`For Loop Number: ${i}`);
+    }, 1000);
+
+}
+loopTimeout();
