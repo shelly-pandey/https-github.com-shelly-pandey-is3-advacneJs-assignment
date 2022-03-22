@@ -1,9 +1,7 @@
-// Your code here
-// I have provided the solution for the first  task to get you going.
+
 class WorldWiki {
   // in the task below I am passing a name and then searching through the data
-  // to find the name. and if its finds it just console.log it.
-  // you can follow similar structure for the rest of the tasks
+ 
 
   searchByName(name) {
     fetch("https://restcountries.com/v3.1/name/" + name + "?fullText=true")
